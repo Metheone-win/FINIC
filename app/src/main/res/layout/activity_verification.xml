@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/StyleScrollView"
+    android:background="@drawable/img_background"
+    tools:context=".activity.VerificationActivity">
+
+    <LinearLayout style="@style/LinearLayoutBasic">
+
+        <TextView
+            style="@style/StyleTextViewHeading"
+            android:text="@string/mobile_verify" />
+
+        <TextView
+            style="@style/StyleTextView"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/text_otp_verify"
+            android:textColor="@color/colorTextHint"
+            android:textSize="@dimen/text_hint" />
+
+        <com.chaos.view.PinView
+            android:id="@+id/pv_otp"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:cursorVisible="true"
+            android:itemBackground="@drawable/pin_box"
+            android:padding="10dp"
+            app:itemHeight="40dp"
+            android:imeOptions="actionDone"
+            app:itemWidth="50dp"
+            android:inputType="number"
+            app:viewType="none"
+            app:cursorColor="@color/colorTextHint"
+            app:itemSpacing="14dp"
+            android:textColor="@color/colorTextHint"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_resend_otp"
+            android:padding="10dp"
+            android:layout_margin="15dp"
+            style="@style/StyleTextView"
+            android:text="Resend OTP!"
+            android:textStyle="italic"/>
+
+
+        <Button
+            android:id="@+id/btn_verify_otp"
+            style="@style/StyleButtonGradient"
+            android:text="@string/verify_mobile" />
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_marginTop="15dp"
+            style="@style/StyleButtonGradient"
+            android:text="@string/logout"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

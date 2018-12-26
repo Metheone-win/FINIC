@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">FINIC</string>
+
+    <string name="server_error_four">Service Unavailable. Server unable to handle request.</string>
+    <string name="server_error_three">Invalid Url.</string>
+    <string name="server_error_two">Unauthorized request</string>
+    <string name="error_pass">Minimum 6 characters required!</string>
+    <string name="error_mobile">Invalid number</string>
+    <string name="error_empty">Field is required</string>
+    <string name="error_email">Invalid email address</string>
+    <string name="error_wrongpass">Incorrect Password</string>
+    <string name="error_pass_dont_match">Password dont match</string>
+    <string name="server_error_one">Bad request</string>
+    <string name="no_detail_available">No details are available for the given sub Category.</string>
+
+    <string name="enter_mobile">Mobile Number</string>
+    <string name="new_user">Create Account</string>
+    <string name="sign_up">Sign up</string>
+    <string name="forgot_pass">Forgot Password ?</string>
+    <string name="forget_pass_heading">Forget Password</string>
+    <string name="reset_pass">Reset\nPassword</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="verify_mobile">Verify</string>
+    <string name="activate_profile">Activate Your Profile</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="enter_pass">Password</string>
+    <string name="mobile_verify">Mobile\nVerification</string>
+    <string name="unauthorized_user">Unauthorized User</string>
+
+    <string name="addiction_world">Addiction World\n( play station )</string>
+    <string name="join_membership">Join Membership 1300/- fees\n for one month</string>
+    <string name="string_no_connection">No Intenet Connection</string>
+    <string name="try_again">Something went wrong. Please try again later!</string>
+
+    <string name="text_otp_sent">Otp sent to your registered mobile number!</string>
+    <string name="text_otp_verify">Please enter the OTP we have sent to your registered mobile number</string>
+    <string name="text_otp_sending">Enter your registered mobile number. We will send you an otp to reset your password.</string>
+    <string name="text_tnc_approval">Please agree to MNC terms and conditions to proceed.</string>
+    <string name="text_enter_otp">Please Enter OTP for verification</string>
+    <string name="text_enter_otp_full_text">Please enter the OTP that we have sent to your registered mobile number.</string>
+    <string name="text_terms_and_conditions">I agree to Terms and Conditions of FINIC</string>
+    <string name="text_pay_activation">Please pay INR 1300 to activate your account. You can explore various options available on app after activation. Also you can enjoy rewards from our refer and earn program after activating your account.</string>
+    <string name="activate_your_account">Please Activate your account to enjoy this feature</string>
+
+    <string name="string_xbox_fee">Free (30/- per hour)</string>
+    <string name="string_ps_fee">Free (20/- per hour)</string>
+    <string name="string_knite_fee">Free (50/- per hour)</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="string_full_name">Full Name</string>
+    <string name="string_email_id">Email Id</string>
+    <string name="string_address">Address</string>
+    <string name="activate_your_profile">Activate Your Profile</string>
+    <string name="string_your_referral_code">Your Referral Code</string>
+    <string name="title_activity_change_pass">ChangePass</string>
+    <string name="apply_refer_code">Apply Refer Code</string>
+    <string name="something_went_wrong">Something went wrong</string>
+
+    <string name="about_us">About us</string>
+    <string name="contact_us">Contact us</string>
+    <string name="logout">Logout</string>
+    <string name="refer_and_earn">Refer and Earn</string>
+    <string name="notifications">Notifications</string>
+    <string name="how_it_works">How it works</string>
+    <string name="login">Login</string>
+    <string name="guest">Guest User</string>
+    <string name="welcome">Welcome</string>
+    <string name="you_have_no_notifications">You have no notifications</string>
+    <string name="grow_your_network">Grow your network by sharing FINIC with your friends and family and earn real money on each successful signup with your referral code.  Happy Sharing!</string>
+    <string name="share">Share</string>
+    <string name="you_have_no_referrals_yet">You have no referrals yet.</string>
+    <string name="reference_ntree">Reference Tree</string>
+    <string name="user_image">User Image</string>
+    <string name="app_banner">App Banner</string>
+    <string name="no_sub_category_available">No Sub-Category Available!</string>
+    <string name="messages">Messages</string>
+    <string name="the_person_has_no_referrals_yet">The person has no referrals yet!</string>
+    <string name="chat">Chat</string>
+    <string name="you_have_no_chats_yet">You have no chats yet!</string>
+    <string name="title_activity_redeem_wallet">RedeemWalletAct</string>
+    <string name="account_number">Account Number</string>
+    <string name="account_holder_s_name">Account Holder\'s Name</string>
+    <string name="ifsc_code">IFSC Code</string>
+    <string name="branch_name">Branch Name</string>
+    <string name="bank_details">Bank Details</string>
+    <string name="redeem_request">Redeem Request</string>
+    <string name="points">Points</string>
+    <string name="redeem_history">Redeem History</string>
+    <string name="redeem">Redeem</string>
+    <string name="edit">Edit</string>
+    <string name="create_request_to_redeem_wallet_points">Create request to redeem wallet points</string>
+    <string name="save">Save</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="your_referral_tree">Your Referral tree</string>
+    <string name="amount_earned_description">Amount Earned Description</string>
+    <string name="level">Level</string>
+    <string name="value_1_point_1_rs">Value: 1 Point = 1 Rs.</string>
+
+    <string name="addiction_cyber_world">Addiction Cyber World</string>
+
+    <string name="more_services">More Services</string>
+    <string name="title_activity_khana_khazana_sub_category">KhanaKhazanaSubCategory</string>
+    <string name="title_activity_games">GamesActivity</string>
+    <string name="title_activity_online_services">OnlineServices</string>
+    <string name="title_activity_online_services_sub_categories">OnlineServicesSubCategories
+    </string>
+    <string name="online_services">Online Services</string>
+    <string name="title_activity_online_services_sub_category">OnlineServicesSubCategory</string>
+    <string name="title_activity_terms_and_condition">Terms And Condition</string>
+    <string name="guidance_text">The feature guides you in various fields to get the best out of you. To enjoy this feature, please login.</string>
+    <string name="online_services_text">Online Services lets you discover most recent and popular services all over the world online. To enjoy this feature, please login.</string>
+    <string name="_1_activate_your_account">1.\tActivate your account</string>
+    <string name="do_onetime_payment_of_inr_1300_and_be_our_active_member_to_enjoy_various_benefits_of_our_app">Do onetime payment to activate your account and be our active member to enjoy various benefits of our app.</string>
+    <string name="_2_get_your_referral_code">2.\tGet your referral code.</string>
+    <string name="grab_your_code_and_enjoy_free_subscription_of_sports_partner_x_box_360_play_station_2_and_kinect_sports_for_a_month_exclusively">Grab your code and you will be eligible to enjoy our in-app services absolutely free.  </string>
+    <string name="_3_enjoy_unlimited_services">3. Enjoy unlimited services</string>
+    <string name="after_activation_you_will_be_eligible_to_enjoy_our_in_app_services_absolutely_free">After activation you will get to enjoy subscription of our services like computer education basics, x-box 360, play station 2 and kinect sports for a month exclusively. </string>
+    <string name="_4_earn_thousands_of_rewards">4.\tEarn Thousands of rewards.</string>
+    <string name="_5_hierarchal_rewards">5.\tHierarchal Rewards.</string>
+    <string name="invite_your_friends_with_your_referral_code_and_earn_rewards_with_each_referral">Invite your friends with your referral code and earn rewards with each referral.</string>
+    <string name="not_only_from_your_own_referrals_you_get_paid_for_each_and_every_new_user_that_joins_our_app_even_with_the_code_of_the_friends_you_referred">Not only from your own referrals, you get paid for each and every new user that joins our app even with the code of the friends you referred.</string>
+    <string name="redeem_request_generated">Congratulations! You will be receiving the confirmation of your redeem request soon.</string>
+    <string name="total_point">Total Earn Points :</string>
+    <string name="earn_second_msg">just enter it and enjoy services. Or use below link</string>
+    <string name="earn_first_msg">After getting full satisfaction, I’m inviting you to join Finic, a simple way to use services and earn many rewards.. Here’s my code</string>
+
+</resources>

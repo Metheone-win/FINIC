@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/content_padding_medium"
+    android:background="@drawable/img_bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.OnlineServicesSubCategory"
+    tools:showIn="@layout/activity_online_services_sub_category">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_online_service_sub_category"
+        android:layout_width="match_parent"
+        android:layout_above="@id/btn_chat"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btn_chat"
+        style="@style/StyleButtonBlue"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_chat"
+        android:text="Chat"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_btn" />
+</RelativeLayout>

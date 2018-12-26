@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/StyleScrollView"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_bg"
+    android:padding="20dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.ReferActivitySubTree"
+    tools:showIn="@layout/activity_refer_sub_tree">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/opensans_semibold"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="2dp"
+            android:text="@string/the_person_has_no_referrals_yet"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_level_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/opensans_semibold"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="2dp"
+            android:focusable="true"
+            android:text="Level 2"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/layout_referal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_level_no"
+            android:layout_margin="3dp"
+            android:descendantFocusability="beforeDescendants"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="4dp"
+                app:cardUseCompatPadding="true">
+
+                <TextView
+                    android:id="@+id/tv_name_initials"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="6dp"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/img_user_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:scaleType="centerCrop" />
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="@dimen/spacing_refer_and_earn"
+                android:background="@android:color/black"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_referrals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cv"
+                android:layout_marginTop="4dp"
+                tools:itemsCount="4"
+                tools:listitem="@layout/item_refer_and_earn">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

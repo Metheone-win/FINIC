@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "252347309757",
+    "firebase_url": "https://finicapplication.firebaseio.com",
+    "project_id": "finicapplication",
+    "storage_bucket": "finicapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252347309757:android:d7d76ab77875f05f",
+        "android_client_info": {
+          "package_name": "com.wcoast.finic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252347309757-ua83jpiqt6u26keb2gfqt1ih77mrp8tl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wcoast.finic",
+            "certificate_hash": "b732736e1886b4a73ed0d35fecfdd86fd84d0dca"
+          }
+        },
+        {
+          "client_id": "252347309757-savr5pjm0j57q1babnggud9vjhpkj27g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkP-t34dzGQpQhgPj8sPa-N7e8bYEY27Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "252347309757-savr5pjm0j57q1babnggud9vjhpkj27g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

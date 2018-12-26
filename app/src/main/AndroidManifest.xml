@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wcoast.finic">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:name=".FINIC_App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="finic.page.link"
+                    android:scheme="https" />
+                <data
+                    android:host="finic.page.link"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.SignupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.ForgetPassword"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.VerificationActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.SubCatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.UpdateProfileAct"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.ReferActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.DetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.ActivateAccAct"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.ContactUsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.AboutUsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.NotificationAct"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.HowItWorksAct"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.ChatActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Paytm Activity -->
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard" />
+
+        <!-- Image Picker  Activity -->
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB7IsQGL24TEvdTmpqoZhY6zX0h2zRJ7r0" />
+
+        <service
+            android:name=".service.MyFirebaseMessagingService"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activity.ChangePassAct"
+            android:label="@string/title_activity_change_pass"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activity.ReferActivitySubTree" />
+        <activity android:name=".activity.AllChats" />
+        <activity android:name=".activity.ChatUsersActivity" />
+        <activity
+            android:name=".activity.RedeemWalletAct"
+            android:label="@string/title_activity_redeem_wallet"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activity.ReferLevelDetails" />
+        <activity android:name=".activity.ReferAndEarnDescription" />
+        <activity
+            android:name=".activity.KhanaKhazanaSubCategory"
+            android:label="@string/title_activity_khana_khazana_sub_category"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activity.KhanaKhazanaIImages" />
+        <activity
+            android:name=".activity.GamesActivity"
+            android:label="@string/title_activity_games"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.Guidance"
+            android:label="@string/title_activity_online_services"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.GuidanceSubCategories"
+            android:label="@string/title_activity_online_services_sub_categories"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.OnlineServices"
+            android:label="@string/title_activity_online_services"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.OnlineServicesSubCategory"
+            android:label="@string/title_activity_online_services_sub_category"
+            android:theme="@style/AppTheme" />
+
+        <activity android:name=".activity.TermsAndConditionsActivity"
+            android:label="@string/title_activity_terms_and_condition"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

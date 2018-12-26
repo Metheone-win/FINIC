@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/content_padding_small"
+    tools:context=".activity.ReferAndEarnDescription"
+    tools:showIn="@layout/activity_refer_and_earn_description">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/StyleTextViewLevelHeading"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/white"
+                android:text="Refer more and more people under you and earn thousands of bonus daily."
+                android:layout_marginStart="5dp" />
+
+            <TextView
+                style="@style/StyleTextViewLevelHeading"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/white"
+                android:text="@string/value_1_point_1_rs"
+                android:layout_marginTop="@dimen/content_padding_small"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="20dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="20dp"
+                    android:paddingStart="12dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:id="@+id/tv_level"
+                        style="@style/StyleTextViewLevelHeading"
+                        android:text="Level 1" />
+
+
+                    <TextView
+                        style="@style/StyleTextViewLevelHeading"
+                        android:paddingBottom="0dp"
+                        android:paddingTop="0dp"
+                        android:text="Maximum Reward at this level" />
+
+                    <TextView
+                        style="@style/StyleTextViewLevel"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="4 Members     *      260 Points     = 1040 Points" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="20dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="20dp"
+                    android:paddingStart="12dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        style="@style/StyleTextViewLevelHeading"
+                        android:text="Level 2" />
+
+
+                    <TextView
+                        style="@style/StyleTextViewLevelHeading"
+                        android:paddingBottom="0dp"
+                        android:paddingTop="0dp"
+                        android:text="Maximum Reward at this level" />
+
+                    <TextView
+                        style="@style/StyleTextViewLevel"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="16 Members    *      105 Points    = 1680 Points" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="20dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="20dp"
+                    android:paddingStart="12dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        style="@style/StyleTextViewLevelHeading"
+                        android:text="Level 3" />
+
+
+                    <TextView
+                        style="@style/StyleTextViewLevelHeading"
+                        android:paddingBottom="0dp"
+                        android:paddingTop="0dp"
+                        android:text="Maximum Reward at this level" />
+
+                    <TextView
+                        style="@style/StyleTextViewLevel"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="64 Members    *      85 Points       = 5,440 Points" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="20dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="20dp"
+                    android:paddingStart="12dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        style="@style/StyleTextViewLevelHeading"
+                        android:text="Level 4" />
+
+
+                    <TextView
+                        style="@style/StyleTextViewLevelHeading"
+                        android:paddingBottom="0dp"
+                        android:paddingTop="0dp"
+                        android:text="Maximum Reward at this level" />
+
+                    <TextView
+                        style="@style/StyleTextViewLevel"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="256 Members   *      90 Points       = 23,040 Points" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="20dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="20dp"
+                    android:paddingStart="12dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        style="@style/StyleTextViewLevelHeading"
+                        android:text="Level 5" />
+
+
+                    <TextView
+                        style="@style/StyleTextViewLevelHeading"
+                        android:paddingBottom="0dp"
+                        android:paddingTop="0dp"
+                        android:text="Maximum Reward at this level" />
+
+                    <TextView
+                        style="@style/StyleTextViewLevel"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="1024 Members  *      90 Points      = 92,160 Points " />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="20dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="20dp"
+                    android:paddingStart="12dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        style="@style/StyleTextViewLevelHeading"
+                        android:text="Level 6" />
+
+
+                    <TextView
+                        style="@style/StyleTextViewLevelHeading"
+                        android:paddingBottom="0dp"
+                        android:paddingTop="0dp"
+                        android:text="Maximum Reward at this level" />
+
+                    <TextView
+                        style="@style/StyleTextViewLevel"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="4096 Members  *      75 Points      = 3,07,200 Points" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="20dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="20dp"
+                    android:paddingStart="12dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        style="@style/StyleTextViewLevelHeading"
+                        android:text="Level 7" />
+
+
+                    <TextView
+                        style="@style/StyleTextViewLevelHeading"
+                        android:paddingBottom="0dp"
+                        android:paddingTop="0dp"
+                        android:text="Maximum Reward at this level" />
+
+                    <TextView
+                        style="@style/StyleTextViewLevel"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="16384 Members *   285 Points     = 46,69,440 Points" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                style="@style/StyleTextViewLevelHeading"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="@dimen/content_padding_small"
+                android:text="Like this you can make a total of 5100000 points and fulfill your dreams"
+                android:layout_marginStart="5dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

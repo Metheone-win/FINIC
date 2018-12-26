@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/img_bg"
+   style="@style/StyleScrollView"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.ChangePassAct"
+    tools:showIn="@layout/activity_change_pass">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="50dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/StyleTextView"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/text_enter_otp_full_text" />
+
+
+                <com.chaos.view.PinView
+                    android:id="@+id/pv_otp"
+                    style="@style/PinWidget.PinView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="true"
+                    android:layout_gravity="center_horizontal"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:itemBackground="@drawable/pb_colorful"
+                    android:padding="10dp"
+                    android:textColor="@color/colorGrayDark"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    app:cursorColor="@color/colorGrayDark"
+                    app:itemHeight="45dp"
+                    app:itemSpacing="14dp"
+                    app:itemWidth="50dp"
+                    app:viewType="none" />
+
+                <TextView
+                    style="@style/StyleTextView"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginTop="15dp"
+                    android:text="Please enter new password" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/et_new_pass"
+                    style="@style/StyleTIL"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:theme="@style/AppThemeGray">
+
+                    <EditText
+                        style="@style/StyleEditTextUpdatePro"
+                        android:drawableLeft="@drawable/ic_pass_blue"
+                        android:drawableStart="@drawable/ic_pass_blue"
+                        android:hint="New Password"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/et_cnfrm_pass"
+                    style="@style/StyleTIL"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:theme="@style/AppThemeGray">
+
+                    <EditText
+                        style="@style/StyleEditTextUpdatePro"
+                        android:drawableLeft="@drawable/ic_pass_blue"
+                        android:drawableStart="@drawable/ic_pass_blue"
+                        android:hint="@string/confirm_pass"
+                        android:layout_marginBottom="20dp"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_submit_new_password"
+            style="@style/StyleButtonBlue"
+            android:layout_below="@id/card_view"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="80dp"
+            android:text="Submit" />
+
+    </RelativeLayout>
+
+</ScrollView>

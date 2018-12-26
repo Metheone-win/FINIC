@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.HomeActivity"
+    tools:showIn="@layout/app_bar_categories">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:weightSum="1">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_first_banner"
+            android:layout_width="match_parent"
+            android:layout_height="178dp"
+            app:cardBackgroundColor="#3B2B98"
+            app:cardCornerRadius="4dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_heading_1"
+                    style="@style/StyleTextViewHomeBanner1"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/addiction_cyber_world"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_game_name_ps2"
+                    style="@style/StyleTextViewHomeBanner1"
+                    android:layout_below="@id/tv_heading_1"
+                    android:paddingTop="10dp"
+                    android:text="*    PS-2      >      Rs. 20/-              20 Hour >" />
+
+                <TextView
+                    android:id="@+id/tv_game_name_xbox"
+                    style="@style/StyleTextViewHomeBanner1"
+                    android:layout_below="@id/tv_game_name_ps2"
+                    android:text="*   X-Box     >      Rs. 40/-              20 Hour >" />
+
+                <TextView
+                    android:id="@+id/tv_game_name_kineet"
+                    style="@style/StyleTextViewHomeBanner1"
+                    android:layout_below="@id/tv_game_name_xbox"
+                    android:text="*   Kinect    >      Rs. 80/-              20 Hour >" />
+
+                <TextView
+                    android:id="@+id/tv_total_charges"
+                    style="@style/StyleTextViewHomeBanner1"
+                    android:layout_below="@id/tv_game_name_kineet"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="6dp"
+                    android:text="Total Charges 2800/-" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_second_banner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardBackgroundColor="#ACDAF1"
+            app:cardCornerRadius="4dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_computer">
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_third_banner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardBackgroundColor="#ACDAF1"
+            app:cardCornerRadius="4dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_home_discount_banner">
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_forth_banner"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="4dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_home_refer_earn_banner">
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tv_more_services"
+                android:layout_toStartOf="@id/tv_more_services"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_home_arrow_right" />
+
+            <TextView
+                android:id="@+id/tv_more_services"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="4dp"
+                android:text="@string/more_services"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/tv_more_services"
+                android:layout_toRightOf="@id/tv_more_services"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_home_arrow_left" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_categories"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingTop="5dp"
+            android:visibility="gone"
+            tools:listitem="@layout/item_categories">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_guidance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                app:cardUseCompatPadding="true"
+                card_view:cardBackgroundColor="#85241E"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/iv_guidance"
+                        style="@style/StyleImageViewHomeOptions"
+                        android:src="@drawable/ic_guidance" />
+
+                    <TextView
+                        style="@style/StyleTextViewHomeOptions"
+                        android:text="Guidance" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_online_services"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                app:cardUseCompatPadding="true"
+                card_view:cardBackgroundColor="#1DC3DD"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/iv_online_services"
+                        style="@style/StyleImageViewHomeOptions"
+                        android:src="@drawable/ic_home_online_service" />
+
+                    <TextView
+                        style="@style/StyleTextViewHomeOptions"
+                        android:text="Online Services" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_khana_khazana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                app:cardUseCompatPadding="true"
+                card_view:cardBackgroundColor="#DC2C1D"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/iv_khana_khazana"
+                        style="@style/StyleImageViewHomeOptions"
+                        android:src="@drawable/ic_khana_khazana" />
+
+                    <TextView
+                        style="@style/StyleTextViewHomeOptions"
+                        android:text="Khana Khazana" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_about_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                app:cardUseCompatPadding="true"
+                card_view:cardBackgroundColor="#5FC420"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/iv_about_us"
+                        style="@style/StyleImageViewHomeOptions"
+                        android:src="@drawable/ic_home_about_us" />
+
+                    <TextView
+                        style="@style/StyleTextViewHomeOptions"
+                        android:text="About Us" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                app:cardUseCompatPadding="true"
+                card_view:cardBackgroundColor="#3B2B98"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/iv_login"
+                        style="@style/StyleImageViewHomeOptions"
+                        android:src="@drawable/ic_home_login"
+                        android:tint="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/tv_login_text"
+                        style="@style/StyleTextViewHomeOptions"
+                        android:text="Login" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                app:cardUseCompatPadding="true"
+                card_view:cardBackgroundColor="#1EA16B"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/iv_new_registration"
+                        style="@style/StyleImageViewHomeOptions"
+                        android:src="@drawable/ic_home_new_user_registration" />
+
+                    <TextView
+                        style="@style/StyleTextViewHomeOptions"
+                        android:text="New User Registration" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

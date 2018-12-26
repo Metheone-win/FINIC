@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="20dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="12dp">
+
+        <TextView
+            android:id="@+id/tv_level"
+            style="@style/StyleTextViewLevelHeading"
+            android:text="@string/level" />
+
+        <TextView
+            android:id="@+id/tv_level_no"
+            style="@style/StyleTextViewLevelHeading"
+            android:layout_alignBottom="@id/tv_level"
+            android:layout_toEndOf="@id/tv_level"
+            android:layout_toRightOf="@id/tv_level"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/tv_total"
+            style="@style/StyleTextViewLevelHeading"
+            android:layout_below="@id/tv_level"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp"
+            android:text="Total" />
+
+        <TextView
+            android:id="@+id/tv_child_total"
+            style="@style/StyleTextViewLevel"
+            android:layout_below="@id/tv_total"
+            android:paddingTop="0dp"
+            android:text="4" />
+
+        <TextView
+            android:id="@+id/tv_total_multi"
+            style="@style/StyleTextViewLevel"
+            android:layout_alignBottom="@id/tv_child_total"
+            android:layout_toEndOf="@id/tv_child_total"
+            android:layout_toRightOf="@id/tv_child_total"
+            android:paddingTop="0dp"
+            android:text="*" />
+
+        <TextView
+            android:id="@+id/tv_level_amount"
+            style="@style/StyleTextViewLevel"
+            android:layout_alignBottom="@id/tv_total_multi"
+            android:layout_toEndOf="@id/tv_total_multi"
+            android:layout_toRightOf="@id/tv_total_multi"
+            android:paddingTop="0dp"
+            android:text="250" />
+
+
+        <TextView
+            android:id="@+id/tv_equals"
+            style="@style/StyleTextViewLevel"
+            android:layout_alignBottom="@id/tv_level_amount"
+            android:layout_toEndOf="@id/tv_level_amount"
+            android:layout_toRightOf="@id/tv_level_amount"
+            android:paddingTop="0dp"
+            android:text="=" />
+
+        <TextView
+            android:id="@+id/tv_point_total"
+            style="@style/StyleTextViewLevel"
+            android:layout_alignBottom="@id/tv_equals"
+            android:layout_toEndOf="@id/tv_equals"
+            android:layout_toRightOf="@id/tv_equals"
+            android:paddingTop="0dp" />
+
+
+        <TextView
+            android:id="@+id/tv_added"
+            style="@style/StyleTextViewLevelHeading"
+            android:layout_below="@id/tv_point_total"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp"
+            android:text="Added" />
+
+        <TextView
+            android:id="@+id/tv_child_added"
+            style="@style/StyleTextViewLevel"
+            android:layout_below="@id/tv_added"
+            android:paddingTop="0dp"
+            android:text="4" />
+
+        <TextView
+            android:id="@+id/tv_added_multi"
+            style="@style/StyleTextViewLevel"
+            android:layout_alignBottom="@id/tv_child_added"
+            android:layout_toEndOf="@id/tv_child_added"
+            android:layout_toRightOf="@id/tv_child_added"
+            android:paddingTop="0dp"
+            android:text="*" />
+
+        <TextView
+            android:id="@+id/tv_level_amount2"
+            style="@style/StyleTextViewLevel"
+            android:layout_alignBottom="@id/tv_added_multi"
+            android:layout_toEndOf="@id/tv_added_multi"
+            android:layout_toRightOf="@id/tv_added_multi"
+            android:paddingTop="0dp"
+            android:text="250" />
+
+
+        <TextView
+            android:id="@+id/tv_equals_added"
+            style="@style/StyleTextViewLevel"
+            android:layout_alignBottom="@id/tv_level_amount2"
+            android:layout_toEndOf="@id/tv_level_amount2"
+            android:layout_toRightOf="@id/tv_level_amount2"
+            android:paddingTop="0dp"
+            android:text="=" />
+
+        <TextView
+            android:id="@+id/tv_point_added"
+            style="@style/StyleTextViewLevel"
+            android:layout_alignBottom="@id/tv_equals_added"
+            android:layout_toEndOf="@id/tv_equals_added"
+            android:layout_toRightOf="@id/tv_equals_added"
+            android:paddingTop="0dp" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

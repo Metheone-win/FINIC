@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context=".activity.HowItWorksAct">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="How It Works"
+            app:titleTextColor="@color/colorAccent" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/content_padding_large">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/StyleTextViewHowItWorkHeading"
+                android:text="@string/_1_activate_your_account" />
+
+            <TextView
+                style="@style/StyleTextViewHowItWorkDescription"
+                android:text="@string/do_onetime_payment_of_inr_1300_and_be_our_active_member_to_enjoy_various_benefits_of_our_app" />
+
+            <TextView
+                style="@style/StyleTextViewHowItWorkHeading"
+                android:text="@string/_2_get_your_referral_code" />
+
+            <TextView
+                style="@style/StyleTextViewHowItWorkDescription"
+                android:text="@string/grab_your_code_and_enjoy_free_subscription_of_sports_partner_x_box_360_play_station_2_and_kinect_sports_for_a_month_exclusively" />
+
+            <TextView
+                style="@style/StyleTextViewHowItWorkHeading"
+                android:text="@string/_3_enjoy_unlimited_services" />
+
+            <TextView
+                style="@style/StyleTextViewHowItWorkDescription"
+                android:text="@string/after_activation_you_will_be_eligible_to_enjoy_our_in_app_services_absolutely_free" />
+
+            <TextView
+                style="@style/StyleTextViewHowItWorkHeading"
+                android:text="@string/_4_earn_thousands_of_rewards" />
+
+            <TextView
+                style="@style/StyleTextViewHowItWorkDescription"
+                android:text="@string/invite_your_friends_with_your_referral_code_and_earn_rewards_with_each_referral" />
+
+            <TextView
+                style="@style/StyleTextViewHowItWorkHeading"
+                android:text="@string/_5_hierarchal_rewards" />
+
+            <TextView
+                style="@style/StyleTextViewHowItWorkDescription"
+                android:text="@string/not_only_from_your_own_referrals_you_get_paid_for_each_and_every_new_user_that_joins_our_app_even_with_the_code_of_the_friends_you_referred" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

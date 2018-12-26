@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="290dp"
+    android:layout_height="180dp"
+    android:background="@drawable/dialog_otp"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/StyleTextView"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="@string/text_otp_sent"
+        android:textColor="#bab9b9" />
+
+    <Button
+        android:id="@+id/btn_verify"
+        style="@style/StyleButtonGradient"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="28dp"
+        android:text="Continue" />
+
+</LinearLayout>

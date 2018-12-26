@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background"
+    tools:showIn="@layout/activity_contact_us">
+
+    <LinearLayout style="@style/LinearLayoutBasic">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingTop="10dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/et_full_name"
+                    style="@style/StyleTIL"
+                    android:layout_margin="0dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:theme="@style/AppThemeGray">
+
+                    <EditText
+                        style="@style/StyleEditTextUpdatePro"
+                        android:drawableLeft="@drawable/ic_name_blue"
+                        android:drawableStart="@drawable/ic_name_blue"
+                        android:hint="@string/string_full_name"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_mobile_no"
+                    style="@style/StyleTIL"
+                    android:layout_margin="0dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:theme="@style/AppThemeGray">
+
+                    <EditText
+                        style="@style/StyleEditTextUpdatePro"
+                        android:drawableLeft="@drawable/ic_mobile_blue"
+                        android:drawableStart="@drawable/ic_mobile_blue"
+                        android:hint="@string/enter_mobile"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/et_message"
+                    style="@style/StyleTIL"
+                    android:layout_margin="0dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:theme="@style/AppThemeGray">
+
+                    <EditText
+                        style="@style/StyleEditTextUpdatePro"
+                        android:drawableLeft="@drawable/ic_email_blue"
+                        android:drawableStart="@drawable/ic_email_blue"
+                        android:maxLines="10"
+                        android:hint="Message"
+                        android:inputType="textMultiLine"
+                        android:gravity="start"
+                         />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <Button
+            android:id="@+id/btn_submit_message"
+            style="@style/StyleButtonBlue"
+            android:layout_marginTop="180dp"
+            android:text="Submit" />
+    </LinearLayout>
+</ScrollView>

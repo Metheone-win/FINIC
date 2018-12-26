@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.RedeemWalletAct"
+    tools:showIn="@layout/activity_redeem_wallet">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_bold"
+                    android:gravity="center"
+                    android:text="@string/bank_details"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_account_no"
+                    style="@style/StyleTIL"
+                    android:layout_margin="0dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:theme="@style/AppThemeGray">
+
+                    <EditText
+                        android:id="@+id/et_account_no"
+                        style="@style/StyleEditTextUpdatePro"
+                        android:hint="@string/account_number"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_name"
+                    style="@style/StyleTIL"
+                    android:layout_margin="0dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:theme="@style/AppThemeGray">
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        style="@style/StyleEditTextUpdatePro"
+                        android:hint="@string/account_holder_s_name"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_ifsc"
+                    style="@style/StyleTIL"
+                    android:layout_margin="0dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:theme="@style/AppThemeGray">
+
+                    <EditText
+                        android:id="@+id/et_ifsc"
+                        style="@style/StyleEditTextUpdatePro"
+                        android:hint="@string/ifsc_code"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_bank_name"
+                    style="@style/StyleTIL"
+                    android:layout_margin="0dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:theme="@style/AppThemeGray">
+
+                    <EditText
+                        android:id="@+id/et_bank_name"
+                        style="@style/StyleEditTextUpdatePro"
+                        android:hint="@string/bank_name"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="4" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_branch_name"
+                    style="@style/StyleTIL"
+                    android:layout_margin="0dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:theme="@style/AppThemeGray">
+
+                    <EditText
+                        android:id="@+id/et_branch_name"
+                        style="@style/StyleEditTextUpdatePro"
+                        android:hint="@string/branch_name"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:maxLines="4" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_edit"
+                    style="@style/StyleButtonBlue"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/edit" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cv"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_bold"
+                    android:gravity="center_horizontal"
+                    android:text="@string/redeem"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/opensans_bold"
+                    android:gravity="center_horizontal"
+                    android:text="@string/create_request_to_redeem_wallet_points"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_points"
+                    style="@style/StyleTIL"
+                    android:layout_margin="0dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:theme="@style/AppThemeGray">
+
+                    <EditText
+                        android:id="@+id/et_points"
+                        style="@style/StyleEditTextUpdatePro"
+                        android:hint="@string/points"
+                        android:inputType="text"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_redeem"
+                    style="@style/StyleButtonBlue"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/redeem" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cv_2"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_bold"
+                    android:gravity="center_horizontal"
+                    android:text="@string/redeem_history"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_redeem_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

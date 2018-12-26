@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fff</color>
+    <color name="colorPrimaryDark">#afaeae</color>
+    <color name="colorAccent">#12B0FA</color>
+    <color name="colorTextHint">#f1f1f1</color>
+    <color name="colorPending">#d1b02b</color>
+    <color name="colorRejected">#f14747</color>
+    <color name="colorSuccess">#1b8739</color>
+    <color name="colorGrayDark">#37474F</color>
+    <color name="colorDetailText">#6F7E8B</color>
+    <color name="colorBackGround">#F4F9FF</color>
+    <color name="colorGreen">#13911a</color>
+
+</resources>
